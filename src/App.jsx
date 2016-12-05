@@ -21,7 +21,7 @@ function App({ height, isNarrow, isMedium, isWide, sizeId, url, width }) {
       <div className="App-header" style={{ backgroundColor: sizeColor[sizeId] }}>
         <h1>Redux Windowsize</h1>
       </div>
-      <p>Link to npm module <a href={url}>cape-io/redux-windowsize</a>.</p>
+      <p>Link to npm module code <a href={url}>cape-io/redux-windowsize</a>.</p>
       <p>{sourceThis}<a href={url.concat('-website')}>cape-io/redux-windowsize-website</a>.</p>
       <h2>{`Height: ${height}`}</h2>
       <h2>{`Width: ${width}`}</h2>
