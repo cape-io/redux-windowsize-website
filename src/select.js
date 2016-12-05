@@ -1,11 +1,9 @@
-import { overEvery, property } from 'lodash'
+import { overEvery } from 'lodash'
 import { gte as maxWidth, lt as minWidth } from 'lodash/fp'
 import { createSelector, createStructuredSelector } from 'reselect'
-import { getHeightWidth, sizeIdSelector } from 'redux-windowsize'
+import { getHeightWidth, getWindowWidth, sizeIdSelector } from 'redux-windowsize'
 
 export const merge = (object, ...sources) => Object.assign({}, object, ...sources)
-
-export const getWindowWidth = property('windowSize.width')
 
 export const sizeId = sizeIdSelector('megaWide', [
   [400, 'tiny'], [550, 'skinny'], [700, 'average'],
