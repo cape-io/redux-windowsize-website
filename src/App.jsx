@@ -4,13 +4,14 @@ import { mediaXY } from './select'
 import './App.css'
 
 function App({ height, isNarrow, isMedium, isWide, sizeId, url, width }) {
+  const sourceThis = 'View source for this page on Github '
   return (
     <div className="App">
       <div className="App-header">
         <h1>Redux Windowsize</h1>
       </div>
       <p>Link to npm module <a href={url}>cape-io/redux-windowsize</a>.</p>
-      <p>View source for this page on Github <a href={url}>cape-io/redux-windowsize</a>.</p>
+      <p>{sourceThis}<a href={url.concat('-website')}>cape-io/redux-windowsize</a>.</p>
       <h2>{`Height: ${height}`}</h2>
       <h2>{`Width: ${width}`}</h2>
       {isNarrow && <h3>Narrow only message or whatever.</h3>}
