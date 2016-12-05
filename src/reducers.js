@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import windowSize from 'redux-windowsize'
+import windowSize, { REDUCER_KEY } from 'redux-windowsize'
 
 const reducers = {
-  windowSize
+  [REDUCER_KEY]: windowSize,
 }
 
 export default combineReducers(reducers)

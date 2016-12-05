@@ -1187,9 +1187,9 @@ cape-lodash@^1.8.0:
   dependencies:
     lodash "^4.17.2"
 
-cape-redux@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/cape-redux/-/cape-redux-3.0.0.tgz#fb37ee4380c3e40f707ad922f5dc4a06db68059c"
+cape-redux@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/cape-redux/-/cape-redux-3.1.0.tgz#ae657a5bdc1c5deba51d1e5912aa6ad98ee73a5e"
   dependencies:
     cape-lodash "^1.8.0"
     lodash "^4.17.2"
@@ -2515,13 +2515,9 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-graceful-fs@4.1.10:
+graceful-fs@4.1.10, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
   version "4.1.10"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.10.tgz#f2d720c22092f743228775c75e3612632501f131"
-
-graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
-  version "4.1.11"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
 "graceful-readlink@>= 1.0.0":
   version "1.0.1"
@@ -4615,13 +4611,14 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-redux-windowsize@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/redux-windowsize/-/redux-windowsize-1.1.0.tgz#c2472567717dae9019bda2387dd7c92624f48060"
+redux-windowsize@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/redux-windowsize/-/redux-windowsize-1.2.0.tgz#7a65ad6c1b724a133d95e7aa2b42fef89261689e"
   dependencies:
     cape-lodash "^1.8.0"
-    cape-redux "^3.0.0"
+    cape-redux "^3.1.0"
     lodash "^4.17.2"
+    reselect "^2.5.4"
 
 redux@^3.6.0:
   version "3.6.0"

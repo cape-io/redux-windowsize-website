@@ -2,7 +2,7 @@ import { createElement } from 'react'
 import { render } from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { createSizeAction, listenSize } from 'redux-windowsize'
+import { createSizeAction, listenResize } from 'redux-windowsize'
 import reducers from './reducers'
 import App from './App'
 import './index.css'
@@ -19,7 +19,7 @@ const store = createStore(reducers, reduxDev)
 // Update redux with current size.
 store.dispatch(createSizeAction(window))
 // Dispatch an action every 50ms when window size changes.
-listenSize(store.dispatch, window, 50)
+listenResize(store, window, 50)
 
 // Define our destination where we insert our root react component.
 const destEl = window.document.getElementById('root')
