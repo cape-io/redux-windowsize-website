@@ -9,7 +9,6 @@ export const getWindowSize = property('windowSize')
 export const getHeightWidth = createSelector(getWindowSize, pick(['height', 'width']))
 export const getWindowWidth = property('windowSize.width')
 
-
 export const sizeId = sizeIdSelector('megaWide', [
   [400, 'tiny'], [550, 'skinny'], [700, 'average'],
   [900, 'babyGrand'], [1100, 'grand'], [1300, 'wide'], [1500, 'wider'],
